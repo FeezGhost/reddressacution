@@ -415,4 +415,4 @@ def aboutView(request):
 
 @unauthenticated_user
 def contactView(request):
-    return render(request,'dashboard/about.html')
+    return render(request,'dashboard/contact.html')
