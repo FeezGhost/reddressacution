@@ -1,0 +1,432 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Red Dress Coin Auction - Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="{%static 'assets/images/logo.png'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/animate.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/metisMenu.min.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/styles.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/responsive.css'%}">
+
+
+    <style>
+        
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+}
+
+.panel p{
+    padding: 10px;
+}
+}
+
+    </style>
+</head>
+
+<body>
+
+<!-- header starts -->
+<header>
+<div class="header-bottom">
+
+    <div class="container-fluid" style="background-color: #ef0e19; height: 35px;">
+        <div class="container">
+            <marquee behavior="" direction="" scrollamount="5" style="padding:5px;color: white">Welcome to Red-Dress Coin Auction (RDCA). Auction times 09:00am and 19:30pm</marquee>
+        </div>
+    </div>
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-lg-3 col-sm-7 col-12">
+                        <div class="logo">
+                            <a href="{% url 'homepage' %}">
+                                <img src="{%static 'assets/images/logo.png'%}" alt="" style="height: 90px; margin-top:-30px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-sm-9 d-none d-lg-block mt-3" >
+                        <ul class="mainmenu d-flex justify-content-end">
+                            <li ><a href="{% url 'homepage' %}" style="color: #ef0e19">Home</a> </li>
+                            <li><a href="{% url 'about' %}">About us</a></li>
+                            <li><a href="{% url 'signup' %}">Sign up</a></li>
+                            <li><a href="{% url 'sign_in' %}">Sign in</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 col-8 mt-3 mb-4">
+                        <div class="geta_quote">
+                            <a href="{% url 'contact' %}"  style="background-color: #f89712; border: none;">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none col-4 pull-right col-sm-2 mt-3">
+                        <ul class="menu">
+                            <li class="first"></li>
+                            <li class="second"></li>
+                            <li class="third"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="responsive-menu-area d-block d-sm-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="metismenu">
+                                <li class="sidemenu-items"><a href="{% url 'homepage' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About us</a></li>
+                                <li><a href="{% url 'signup' %}">Sign up</a></li>
+                                <li><a href="{% url 'sign_in' %}">Sign in</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </header>
+
+<!-- header end -->
+
+<!-- slider starts -->
+
+    <div class="slider-area" style="margin-top:-20px;">
+        <div class="slider-active owl-carousel" >
+            <div class="slider-items" style="height: 500px; ">
+                <img src="{%static 'assets/images/red_dress_coin.jpeg'%}" alt="" class="slider">
+                <div class="slider-content flex-style">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-10 col-12">
+                                <h2>Red–Dress Coin Auction (RDCA)</h2>
+                                <p>Red-dress coin auction is a peer to peer online auction that trades shares. Each share (coin) is worth R1 and can only be bought and sold on the auction.</p>
+                                <ul>
+                                    <li><a href="signup.html" style="background-color: #f89712; border: none;">Sign up Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-items" style="height: 500px;">
+                <img src="{%static 'assets/images/red_dress_coin_profit.jpeg'%}" alt="" class="slider">
+                <div class="slider-content flex-style">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-4 col-lg-8 text-right col-12">
+                                <h2>Red–Dress Coin Auction (RDCA) Profits</h2>
+                                <p>Upon buying shares you get a profit of 40% in 2 days, 60% in 3 days, 110% in 5 days depending on the maturity period you select.</p>
+                                <ul>
+                                    <li><a href="about.html" style="background-color: #f89712; border: none;">Read more</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- slider end -->
+
+    <div class="service-area" style="margin-top: -60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>About the Auction</h2>
+                        <p>Red-dress coin auction is a peer to peer online auction that trades shares. Each share (coin) is worth R1 and can only be bought and sold on the auction which is open daily at the times 09:00am and 19:30pm.
+                         <a href="about.html" style="color: #f89712">Read more</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Unique features starts -->
+
+    <div class="service-area" style="margin-top: -200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>Our Unique Features</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="service-items ">
+
+                        <h3>Safe And Secure</h3>
+                        <p>RDCA we work with the best team and invested a lot in systems security to make sure our data is safe secure.</p>
+                    </div>
+                    <div class="service-items">
+
+                        <h3>Remarkable growths</h3>
+                        <p>Provide no hassle with returns and withdrawals building trust with our investors.</p> <br> <br> <br>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 col-12">
+                            <div class="service-items">
+                                <h3>Trust</h3>
+                                <p>The main foundation of RDCA is built on transparency with our investors.</p> <br>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 col-12">
+                            <div class="service-items">
+                                <h3>Experts Support</h3>
+                                <p>We work with the best design and development team to ensure quality product without compromising and you can reach our support team using live chat icon on your dashboard.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 col-12">
+                            <div class="service-items">
+                                <h3>Bidding Amounts</h3>
+                                <p>You have the luxury of choosing your own amount that you can afford between R300-R10000.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 col-12">
+                            <div class="service-items">
+                                <h3>Consultancy</h3>
+                                <p>You can join RDCA group to know more or get intouch with support via live chat or email / join our social media platforms for more information.</p> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unique features end -->
+
+
+    <!-- FAQ starts -->
+
+    <div class="service-area" style="margin-top: -180px;">
+        <div class="container">
+    <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>Freequently Asked Questions </h2>
+                    </div>
+                </div>
+            </div>
+    
+                <button class="accordion"><b>What is needed to register?</b></button>
+                <div class="panel" >
+                <p >Registration is free and easy  simply enter your details, ensure you enter  your number correctly with a country code +27 and valid email address for account activation and confirmation</p>
+                </div>
+
+                <button class="accordion"><b>How many bids can I make?</b></button>
+                <div class="panel">
+                <p>Your account allows you to enter a single bid, the more you make payments and get approved the more bids you will be eligible for. </p>
+                </div>
+
+                <button class="accordion"><b>What percentage do I get on the coins?</b></button>
+                <div class="panel">
+                <p>Shares gives you the following upon selection </p>
+                <ul style="list-style-type: disc; padding-left: 30px;">
+                  <li>40% in 2days</li>
+                  <li>60% in 3 days</li>
+                  <li>110% in 5 days</li>
+                </ul> 
+
+                </div>
+                <button class="accordion"><b>Are there any bonus for referrals?</b></button>
+                <div class="panel">
+                <p>No recruitment bonus to enable participation and commitment for all members. We spent lots of time  and resources on marketing already so only dealing with willing and commited members only.</p>
+                </div>
+                <button class="accordion"><b>How many accounts can I have?</b></button>
+                <div class="panel">
+                <p>Every individual is  only  allowed a single  account</p>
+                </div>
+
+            </div>
+       </div>
+
+    <!-- FAQ end -->
+
+
+<!-- Testomonials starts -->
+
+    <div class="section-title text-center">
+            <h2>Some Testimonials </h2>
+        </div>
+    <div class="testmonial-area" style="background-color: #ccc;">
+        
+        <div class="test-active owl-carousel" >
+            <div class="test-items" >
+                <div class="container" >
+                    <div class="row">
+                        
+                        <div class="col-lg-12 col-sm-12 col-12">
+                            <div class="test-img " >
+                                <img src="{%static 'assets/images/test/1.png'%}" alt="" style="height: 100px; width: 10%;margin: 0 auto;">
+                            </div>
+                            <div class="test-content text-center">
+                                <h2>Bruce Sparks</h2>
+                                
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="test-items">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 col-12">
+                            <div class="test-img " >
+                                <img src="{%static 'assets/images/test/1.png'%}" alt="" style="height: 100px; width: 10%;margin: 0 auto;">
+                            </div>
+                            <div class="test-content text-center">
+                                <h2>Bruce Sparks</h2>
+                                
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Testomonials end -->
+
+    <br><br>
+
+<!-- footer starts -->
+
+    <footer class="footer-area">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5  col-sm-4 col-12">
+                        <div class="footer-widget footer-logo">
+                            <h3>Subscribe us</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the dum majority have suffered alteration in the some form by injected.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Enter your email">
+                                <button style="background-color: #f89712; border: none;">subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-12">
+                        <div class="footer-widget footer-menu">
+                            <h3>Sitemap</h3>
+                            <ul>
+                                <li><a href="{% url 'homepage' %}"><i class="fa fa-angle-double-right"></i> Home</a></li>
+                                <li><a href="{% url 'about' %}"><i class="fa fa-angle-double-right"></i> About us</a></li>
+                                <li><a href="{% url 'contact' %}"><i class="fa fa-angle-double-right"></i> Contact us</a></li>
+                                <li><a href="{% url 'signup' %}"><i class="fa fa-angle-double-right"></i> Sign up</a></li>
+                                <li><a href="{% url 'sign_in' %}"><i class="fa fa-angle-double-right"></i> Sign in</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-sm-4 col-12">
+                        <div class="footer-widget footer-contact">
+                            <h3>Contact Information</h3>
+                            <ul class="footer-contact-info">
+                                <li><span>Location: </span> W Jackson Blvd, Chicago United States</li>
+                                <li><span>Email: </span> exampleemail.com</li>
+                                <li><span>Phone: </span> (123) 45678910</li>
+                            </ul>
+                            <h5>Follow us on Social Media</h5>
+                            <ul class="social-icon d-flex">
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+                <p style="color: #f89712">Copyright ©2020. All rights reserved.</p>
+            </div> 
+        </div>
+        
+    </footer>
+
+<!-- footer end -->
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+    <script src="{%static 'assets/js/vendor/jquery-2.2.4.min.js'%} "></script>
+    <script src="{%static 'assets/js/vendor/popper.min.js'%} "></script>
+    <script src="{%static 'assets/js/bootstrap.min.js'%} "></script>
+    <script src="{%static 'assets/js/owl.carousel.min.js'%} "></script>
+    <script src="{%static 'assets/js/swiper.min.js'%} "></script>
+    <script src="{%static 'assets/js/metisMenu.min.js'%}"></script>
+    <script src="{%static 'assets/js/plugins.js'%} "></script>
+    <script src="{%static 'assets/js/scripts.js'%} "></script>
+</body>
+
+</html>

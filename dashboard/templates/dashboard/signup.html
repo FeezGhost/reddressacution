@@ -1,0 +1,230 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Red Dress Coin Auction - Contact us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="{%static 'assets/images/logo.png'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/animate.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/metisMenu.min.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/styles.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/responsive.css'%}">
+</head>
+
+<body>
+
+<header>
+        <div class="header-bottom">
+
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-lg-3 col-sm-7 col-12">
+                        <div class="logo">
+                            <a href="{% url 'homepage' %}">
+                                <img src="{%static 'assets/images/logo.png'%}" alt="" style="height: 90px; margin-top:-30px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-sm-9 d-none d-lg-block mt-3" >
+                        <ul class="mainmenu d-flex justify-content-end">
+                            <li ><a href="{% url 'homepage' %}" style="color: #ef0e19">Home</a> </li>
+                            <li><a href="{% url 'about' %}">About us</a></li>
+                            <li><a href="{% url 'signup' %}">Sign up</a></li>
+                            <li><a href="{% url 'sign_in' %}">Sign in</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 col-8 mt-3 mb-4">
+                        <div class="geta_quote">
+                            <a href="{% url 'contact' %}"  style="background-color: #f89712; border: none;">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none col-4 pull-right col-sm-2 mt-3">
+                        <ul class="menu">
+                            <li class="first"></li>
+                            <li class="second"></li>
+                            <li class="third"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="responsive-menu-area d-block d-sm-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="metismenu">
+                                <li class="sidemenu-items"><a href="{% url 'homepage' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About us</a></li>
+                                <li><a href="{% url 'signup' %}">Sign up</a></li>
+                                <li><a href="{% url 'sign_in' %}">Sign in</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="flex-style bread_back_color">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="bread_color">Create Free Account on Red Dress Coin Auction (RDCA)</h2>
+                    <ul class="d-flex">
+                        <li ><a href="index.html" id="bread_color">Home </a></li>
+                        <li id="bread_color"><i class="fa fa-angle-double-right"></i></li>
+                        <li id="bread_color"><span> Sign Up</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-page-area" style="background-color: #F5F5F5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-form" method="POST" action="">  
+                        <form action="contact">
+                        {% csrf_token %}
+                            <div class="row">
+                                <div class="col-12">
+                                    {{form.username}}
+                                </div>
+                                <div class="col-lg-6">
+                                    {{form.first_name}}
+                                </div>
+                                <div class="col-lg-6">
+                                    {{form.last_name}}
+                                </div>
+                                <div class="col-lg-6">
+                                    {{form.email}}
+                                </div>
+                                <div class="col-lg-6">
+                                    {{form.phone}}
+                                </div>
+                                <div class="col-lg-6">
+                                    {{form.account_holder_name}}
+                                </div>
+                                <div class="col-lg-6">
+                                    {{form.account_number}}
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="banks">SELECT Bank:</label>
+							        {{form.banks}}
+                                </div>
+                                <div class="col-12">
+                                    {{form.password1}}
+                                </div>
+                                <div class="col-12">
+                                    {{form.password2}}
+                                </div>
+                                
+                                <div class="col-12">
+                                    <button style="background-color: #f89712; border: none;" type="submit">Sign up</button>
+                                    <div class="d-flex justify-content-center links">
+						Already have an account? <a href="{% url 'homepage' %}" class="ml-2 text-warning"><b>Login</b></a>
+					</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                                
+            </div>
+        </div>
+    </div>
+
+<footer class="footer-area">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5  col-sm-4 col-12">
+                        <div class="footer-widget footer-logo">
+                            <h3>Subscribe us</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the dum majority have suffered alteration in the some form by injected.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Enter your email">
+                                <button style="background-color: #f89712; border: none;">subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-sm-4 col-12">
+                        <div class="footer-widget footer-menu">
+                            <h3>Sitemap</h3>
+                            <ul>
+                                <li><a href="{% url 'homepage' %}"><i class="fa fa-angle-double-right"></i> Home</a></li>
+                                <li><a href="{% url 'about' %}"><i class="fa fa-angle-double-right"></i> About us</a></li>
+                                <li><a href="{% url 'contact' %}"><i class="fa fa-angle-double-right"></i> Contact us</a></li>
+                                <li><a href="{% url 'signup' %}"><i class="fa fa-angle-double-right"></i> Sign up</a></li>
+                                <li><a href="{% url 'sign_in' %}"><i class="fa fa-angle-double-right"></i> Sign in</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-sm-4 col-12">
+                        <div class="footer-widget footer-contact">
+                            <h3>Contact Information</h3>
+                            <ul class="footer-contact-info">
+                                <li><span>Location: </span> W Jackson Blvd, Chicago United States</li>
+                                <li><span>Email: </span> exampleemail.com</li>
+                                <li><span>Phone: </span> (123) 45678910</li>
+                            </ul>
+                            <h5>Follow us on Social Media</h5>
+                            <ul class="social-icon d-flex">
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+               <p style="color: #f89712">Copyright ©2020. All rights reserved.</p>
+            </div>
+        </div>
+        
+    </footer>
+   
+   	<script>
+
+		//Query All input fields
+		var form_fields = document.getElementsByTagName('input')
+		form_fields[1].placeholder='Username..';
+		form_fields[2].placeholder='First Name..';
+		form_fields[3].placeholder='Last Name..';
+		form_fields[4].placeholder='Email..';
+		form_fields[5].placeholder='Phone Number..';
+		form_fields[6].placeholder='Account Holder Name..';
+		form_fields[7].placeholder='Account Number..';
+		form_fields[8].placeholder='Enter password...';
+		form_fields[9].placeholder='Re-enter Password...';
+
+
+		for (var field in form_fields){
+			form_fields[field].className += ' form-control'
+		}
+	</script>
+
+    <script src="{%static 'assets/js/vendor/jquery-2.2.4.min.js'%} "></script>
+    <script src="{%static 'assets/js/vendor/popper.min.js'%} "></script>
+    <script src="{%static 'assets/js/bootstrap.min.js'%} "></script>
+    <script src="{%static 'assets/js/owl.carousel.min.js'%} "></script>
+    <script src="{%static 'assets/js/swiper.min.js'%} "></script>
+    <script src="{%static 'assets/js/metisMenu.min.js'%}"></script>
+    <script src="{%static 'assets/js/plugins.js'%} "></script>
+    <script src="{%static 'assets/js/scripts.js'%} "></script>
+</body>
+
+</html>
